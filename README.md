@@ -2,10 +2,10 @@
 smaller create-react-app
 `git clone`, `npm install` and start by `npm start`
 
-## run with docker!
+## Build and run with docker!
 
 Build and run development image for docker:
-- `$ docker build -t react-app-simple:dev`
+- `$ docker build -t react-app-simple:dev .`
 - `$ docker run \
     -it \
     --rm \
@@ -14,5 +14,11 @@ Build and run development image for docker:
     -p 3001:3000 \
     -e CHOKIDAR_USEPOLLING=true \
     react-app-simple:dev`
-- Start developing and the look at app hot-reloading thanks to `-e CHOKIDAR_USERPOLLING=true`
 - Open `localhost:3000` at host
+- Start developing and the look at app hot-reloading thanks to `-e CHOKIDAR_USERPOLLING=true`
+
+Build and run production build:
+- `$ docker build -f Dockerfile.prod -t sample:prod .`
+- `$ docker run -it --rm -p 1337:80 sample:prod`
+
+
