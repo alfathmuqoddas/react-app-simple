@@ -1,5 +1,5 @@
-# React App Simplified
-smaller create-react-app
+# React App Docker Images
+React app with docker image support, so you can deploy it anywhere
 `git clone`, `npm install` and start by `npm start`
 
 ## Build and run with docker!
