@@ -6,15 +6,8 @@ React app with docker image support, so you can deploy it anywhere
 
 Build and run development image for docker:
 - `$ docker build -t react-app-simple:dev .`
-- `$ docker run \
-    -it \
-    --rm \
-    -v ${PWD}:/app \
-    -v /app/node_modules \
-    -p 3001:3000 \
-    -e CHOKIDAR_USEPOLLING=true \
-    react-app-simple:dev`
-- Open `localhost:3000` at host
+- `$ docker run -it --rm -v ${PWD}:/app -v /app/node_modules -p 3001:3000 -e CHOKIDAR_USEPOLLING=true react-app-simple:dev`
+- Open `localhost:3001`
 - Start developing and the look at app hot-reloading thanks to `-e CHOKIDAR_USERPOLLING=true`
 
 Build and run production build:
