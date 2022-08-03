@@ -1,5 +1,5 @@
 import './App.css';
-import {useState, useEffect} from 'React';
+import React, {useState, useEffect} from 'react';
 
 function App() {
   let [count, setCount] = useState(0);
